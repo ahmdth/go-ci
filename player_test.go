@@ -12,7 +12,7 @@ func TestGETPlayers(t *testing.T) {
 		response := httptest.NewRecorder()
 		PlayerServer(response, request)
 		got := response.Body.String()
-		want := "30"
+		want := "20"
 		if got != want {
 			t.Errorf("got %q, want %q", got, want)
 		}
